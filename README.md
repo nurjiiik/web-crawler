@@ -1,43 +1,18 @@
-# Web Crawler Service
+# Web Crawler API
 
-A scalable web crawler service with rate limiting and caching capabilities.
+Enterprise-grade web crawling solution with advanced features.
 
 ## Features
 
-- Rate limiting to prevent overloading target servers
-- Redis-based caching for improved performance
-- Concurrent crawling with configurable limits
-- Swagger API documentation
-- Metrics collection
+- Distributed crawling
+- Redis-based queue
+- Real-time metrics
+- Auto-scaling workers
+- Domain blacklisting
+- Rate limiting
+- API documentation
 
-## Setup
-
-1. Install dependencies:
+## Installation
 ```bash
 npm install
-```
-
-2. Copy example.env to .env and configure as needed:
-```bash
 cp example.env .env
-```
-
-3. Start Redis server
-
-4. Run the application:
-- Development: `npm run dev`
-- Production: `npm start`
-
-## API Documentation
-
-Once the server is running, visit `/api-docs` for the Swagger documentation.
-
-## Configuration
-
-See `example.env` for available configuration options.
-
-## Development
-
-- `npm run dev` - Start with hot-reload
-- `npm test` - Run tests
-- `npm start` - Start in production mode

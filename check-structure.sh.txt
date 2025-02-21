@@ -1,0 +1,3 @@
+#!/bin/bash
+ignore_patterns="node_modules|.git|.DS_Store"
+find . -type d | sed -E "s/^\.\///" | grep -vE "(${ignore_patterns})"
